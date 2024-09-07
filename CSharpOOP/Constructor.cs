@@ -42,6 +42,63 @@ namespace CSharpOOP
         public int Age { get; set; }
 
     }
+
+    static class Settings2
+    {
+        public static int DayNumber
+        {
+            get
+            {
+                return DateTime.Today.Day;
+            }
+        }
+
+        public static string DayName
+        {
+            get
+            {
+                return DateTime.Today.DayOfWeek.ToString();
+            }
+        }
+
+        public static string ProjectPath
+        {
+            get;
+            set;
+        }
+
+    }
+    class Settings3
+    {
+        public static int DayNumber
+        {
+            get
+            {
+                return DateTime.Today.Day;
+            }
+        }
+
+        public static string DayName
+        {
+            get
+            {
+                return DateTime.Today.DayOfWeek.ToString();
+            }
+        }
+
+        public static string ProjectPath
+        {
+            get;
+            set;
+        }
+
+        //this is a private constructor to prevent creating object from this class
+        private Settings3()
+        {
+
+        }
+    }
+
     internal class Constructor
     {
         public static void ConstructorEx()
@@ -69,6 +126,46 @@ namespace CSharpOOP
             Console.WriteLine("ID:= {0}", Person1.Id);
             Console.WriteLine("Name:= {0}", Person1.Name);
             Console.WriteLine("Age:= {0}", Person1.Age);
+        }
+
+        public static void PreventCreateObject()
+        {
+            //first method
+
+            // You cannot create an object here because class is static
+            //Settings2 Obj1 = new Settings2();
+
+            //
+            // Read the static properties.
+            //
+            Console.WriteLine(Settings2.DayNumber);
+            Console.WriteLine(Settings2.DayName);
+
+            //
+            // Change the value of the static bool property.
+            //
+            Settings2.ProjectPath = @"C:\MyProjects\";
+            Console.WriteLine(Settings2.ProjectPath);
+            Console.ReadKey();
+            ////////////////////////////////////////////////////////////////
+            //second method
+
+            // You cannot create an object here because class has private constructor
+            //Settings3 Obj1 = new Settings3();
+
+            //
+            // Read the static properties.
+            //
+            Console.WriteLine(Settings3.DayNumber);
+            Console.WriteLine(Settings3.DayName);
+
+            //
+            // Change the value of the static bool property.
+            //
+            Settings3.ProjectPath = @"C:\MyProjects\";
+            Console.WriteLine(Settings3.ProjectPath);
+            Console.ReadKey();
+
         }
 
     }
