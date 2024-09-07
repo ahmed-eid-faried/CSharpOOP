@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static CSharpOOP.Car;
 
 namespace CSharpOOP
 {
@@ -15,8 +16,10 @@ namespace CSharpOOP
             //AccessModifiers.AccessModifiersEx();
             //StaticMembers.StaticMembersEx();
             //GetSetProperty.PropertiesSetAndGet();
-            StaticPropertiesAndStaticClass.StaticPropertiesAndStaticClassEx();
-
+            //StaticPropertiesAndStaticClass.StaticPropertiesAndStaticClassEx();
+            //Constructor.ConstructorEx();
+            //Constructor.ParameterizedConstructorEx();
+            Constructor.DefaultConstructorEx();
 
             Console.ReadKey();
 
