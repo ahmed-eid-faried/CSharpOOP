@@ -25,6 +25,17 @@ namespace CSharpOOP
             this.Name = Name;
             this.Age = Age;
         }
+        static clsPerson()
+        {
+            Console.WriteLine("static Constructor called ==> 1 item only.");
+
+        }
+        // destructor
+        ~clsPerson()
+        {
+            Console.WriteLine("Destructor called.");
+        }
+
     }
     class Car
     {
@@ -220,7 +231,22 @@ namespace CSharpOOP
             Console.WriteLine("Age:= {0}", Person2.Age);
         }
 
-        public static void 
+        public static void StaticConstructer()
+        {
+            // You cannot create an object here because class is static
+            // Settings4 Obj1 = new Settings4();
+
+            //
+            // Read the static properties.
+            //
+            Console.WriteLine(Settings4.DayNumber);
+            Console.WriteLine(Settings4.DayName);
+            //
+            // Change the value of the static bool property.
+            //
+
+            Console.WriteLine(Settings4.ProjectPath);
+        }
 
     }
 
