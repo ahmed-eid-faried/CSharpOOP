@@ -13,6 +13,7 @@ namespace CSharpOOP
         {
             //ClassObject.PersonEx();
             AccessModifiers.AccessModifiersEx();
+            StaticMembers.StaticMembersEx();
 
 
 
