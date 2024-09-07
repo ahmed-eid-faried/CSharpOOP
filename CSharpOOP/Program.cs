@@ -14,7 +14,8 @@ namespace CSharpOOP
             //ClassObject.PersonEx();
             //AccessModifiers.AccessModifiersEx();
             //StaticMembers.StaticMembersEx();
-            GetSetProperty.PropertiesSetAndGet();
+            //GetSetProperty.PropertiesSetAndGet();
+            StaticPropertiesAndStaticClass.StaticPropertiesAndStaticClassEx();
 
 
             Console.ReadKey();
