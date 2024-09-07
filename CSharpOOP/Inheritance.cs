@@ -46,7 +46,8 @@ namespace CSharpOOP
         public static void InheritanceEx()
         {
             //is -a relationship
-            //In C#, inheritance is an is-a relationship. We use inheritance only if there is an is-a relationship between two classes. For example,
+            //In C#, inheritance is an is-a relationship. We use inheritance only if there is an is-a relationship
+            //between two classes. For example,
 
             //Employee is a Person
             //We can derive Employee from Person class.
