@@ -104,7 +104,37 @@ namespace CSharpOOP
 
         }
     }
+    static class Settings4
+    {
+        public static int DayNumber
+        {
+            get
+            {
+                return DateTime.Today.Day;
+            }
+        }
 
+
+        public static string DayName
+        {
+            get
+            {
+                return DateTime.Today.DayOfWeek.ToString();
+            }
+        }
+
+
+        public static string ProjectPath
+        {
+            get;
+            set;
+        }
+        //this is a static constructor will be called once during the program
+        static Settings4()
+        {
+            ProjectPath = @"C:\MyProjects\";
+        }
+    }
     internal class Constructor
     {
         public static void ConstructorEx()
@@ -189,6 +219,8 @@ namespace CSharpOOP
             Console.WriteLine("Name:= {0}", Person2.Name);
             Console.WriteLine("Age:= {0}", Person2.Age);
         }
+
+        public static void 
 
     }
 

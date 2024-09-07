@@ -20,7 +20,7 @@ namespace CSharpOOP
             //Constructor.ConstructorEx();
             //Constructor.ParameterizedConstructorEx();
             //Constructor.DefaultConstructorEx();
-            Constructor.PreventCreateObject();
+            //Constructor.PreventCreateObject();
             Constructor.MultipleConstructorsUsingOverloading();
 
             Console.ReadKey();
