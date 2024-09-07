@@ -23,11 +23,24 @@ namespace CSharpOOP
                 return FirstName + ' ' + LastName;
             }
         }
+        public clsPerson5(int ID, string FirstName, string LastName, string Title)
+        {
+            this.ID = ID;
+            this.FirstName = FirstName;
+            this.LastName = LastName;
+            this.Title = Title;
+        }
     }
 
     public class clsEmployee5 : clsPerson5
     {
-
+        public clsEmployee5(int ID, string FirstName, string LastName, string Title, string DepartmentName, float Salary) : base(
+              ID, FirstName, LastName, Title
+            )
+        {
+            this.Salary = Salary;
+            this.DepartmentName = DepartmentName;
+        }
 
         public float Salary { get; set; }
         public string DepartmentName { get; set; }
@@ -39,12 +52,30 @@ namespace CSharpOOP
         }
 
 
+
     }
 
     internal class Inheritance
     {
         public static void InheritanceEx()
         {
+            //C# Inheritance
+            //In C#, inheritance allows us to create a new class from an existing class. It is a key feature of
+            //Object-Oriented Programming (OOP).
+
+            //In C#, it is possible to inherit fields and methods from one class to another. We group the
+            //"inheritance concept" into two categories:
+
+            //Derived Class(child) - the class that inherits from another class
+            //Base Class(parent) - the class being inherited from
+            //To inherit from a class, use the : symbol.
+
+            //The class from which a new class is created is known as the base class (parent or superclass or base class ).
+            //And, the new class is called derived class (child or subclass or derived class)
+
+            //The derived class inherits the fields and methods of the base class. This helps with the code reusability in C#.
+
+
             //is -a relationship
             //In C#, inheritance is an is-a relationship. We use inheritance only if there is an is-a relationship
             //between two classes. For example,
@@ -57,17 +88,18 @@ namespace CSharpOOP
 
 
             //Create an object of Empoyee
-            clsEmployee5 Employee1 = new clsEmployee5();
+            //clsEmployee5 Employee1 = new clsEmployee5();
+            clsEmployee5 Employee1 = new clsEmployee5(10, "Mr.", "Ahmed", "Mady", "IT", 5000);
 
             //the following inherited from base class person
-            Employee1.ID = 10;
-            Employee1.Title = "Mr.";
-            Employee1.FirstName = "Mohammed";
-            Employee1.LastName = "Abu-Hadhoud";
+            //Employee1.ID = 10;
+            //Employee1.Title = "Mr.";
+            //Employee1.FirstName = "Ahmed";
+            //Employee1.LastName = "Mady";
 
             //the following are from derived class Employee
-            Employee1.DepartmentName = "IT";
-            Employee1.Salary = 5000;
+            //Employee1.DepartmentName = "IT";
+            //Employee1.Salary = 5000;
 
             Console.WriteLine("Accessing Object 1 (Employee1):\n");
             Console.WriteLine("ID := {0}", Employee1.ID);
