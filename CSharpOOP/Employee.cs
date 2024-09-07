@@ -8,6 +8,7 @@ namespace CSharpOOP
 {
     class clsEmployee
     {
+       public clsEmployee() { Age = 27; }
         // Private fields
         private int _ID;
         private string _Name = string.Empty;
@@ -23,7 +24,7 @@ namespace CSharpOOP
         }
         public string JobTitle { get; set; }
         //read only
-        public int Age  { get; }
+        public int Age { get; }
         private float _Salary = 2000;
         public float Salary { get { return _Salary; } }
     }
