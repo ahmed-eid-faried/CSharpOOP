@@ -8,8 +8,11 @@ namespace CSharpOOP
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
+            ClassObject.PersonEx();
+
         }
     }
 }
