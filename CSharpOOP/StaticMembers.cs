@@ -29,7 +29,7 @@ namespace CSharpOOP
     }
     internal class StaticMembers
     {
-        static void StaticMembersEx()
+        public static void StaticMembersEx()
         {
             //Create an object of Employee class.
             clsA objA1 = new clsA();
@@ -54,6 +54,6 @@ namespace CSharpOOP
             Console.WriteLine("static method2 results:={0}", clsA.Method2());
 
             Console.WriteLine("static x2:={0}", clsA.x2);
-         }
+        }
     }
 }
