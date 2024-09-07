@@ -19,6 +19,12 @@ namespace CSharpOOP
             Name = "Empty";
             Age = 0;
         }
+        public clsPerson(int Id, string Name, short Age)
+        {
+            this.Id = Id;
+            this.Name = Name;
+            this.Age = Age;
+        }
     }
     class Car
     {
@@ -166,6 +172,22 @@ namespace CSharpOOP
             Console.WriteLine(Settings3.ProjectPath);
             Console.ReadKey();
 
+        }
+
+        public static void MultipleConstructorsUsingOverloading()
+        {
+            Console.WriteLine("Calling Parameterless Construcor");
+            clsPerson Person1 = new clsPerson();
+            Console.WriteLine("ID:= {0}", Person1.Id);
+            Console.WriteLine("Name:= {0}", Person1.Name);
+            Console.WriteLine("Age:= {0}", Person1.Age);
+
+
+            Console.WriteLine("\n\nCalling Parametarized Construcor");
+            clsPerson Person2 = new clsPerson(10, "Mohammed Abu-Hadhoud", 45);
+            Console.WriteLine("ID:= {0}", Person2.Id);
+            Console.WriteLine("Name:= {0}", Person2.Name);
+            Console.WriteLine("Age:= {0}", Person2.Age);
         }
 
     }

@@ -19,7 +19,9 @@ namespace CSharpOOP
             //StaticPropertiesAndStaticClass.StaticPropertiesAndStaticClassEx();
             //Constructor.ConstructorEx();
             //Constructor.ParameterizedConstructorEx();
-            Constructor.DefaultConstructorEx();
+            //Constructor.DefaultConstructorEx();
+            Constructor.PreventCreateObject();
+            Constructor.MultipleConstructorsUsingOverloading();
 
             Console.ReadKey();
 
