@@ -33,7 +33,6 @@ namespace CSharpOOP
             Console.WriteLine("Person1: ");
             Console.WriteLine(person2.FullName());
             Console.WriteLine("========================================");
-            Console.ReadKey();
         }
 
 

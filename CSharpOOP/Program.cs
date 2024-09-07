@@ -11,7 +11,12 @@ namespace CSharpOOP
 
         static void Main(string[] args)
         {
-            ClassObject.PersonEx();
+            //ClassObject.PersonEx();
+            AccessModifiers.AccessModifiersEx();
+
+
+
+            Console.ReadKey();
 
         }
     }
