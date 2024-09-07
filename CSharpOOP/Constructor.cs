@@ -36,6 +36,20 @@ namespace CSharpOOP
             Console.WriteLine("Destructor called.");
         }
 
+
+        public static clsPerson Find(int Id)
+        {
+            if (Id == 10)
+            {
+                return new clsPerson(10, "ahmed mady", 27);
+
+            }
+            else
+            {
+                return null;
+            }
+        }
+
     }
     class Car
     {
@@ -247,6 +261,24 @@ namespace CSharpOOP
 
             Console.WriteLine(Settings4.ProjectPath);
         }
+
+        public static void FindObject()
+        {
+            clsPerson person1 = clsPerson.Find(10);
+            if (person1 == null)
+            {
+                Console.WriteLine("Not Found it.");
+            }
+            else
+            {
+                Console.WriteLine("Id = {0}", person1.Id);
+                Console.WriteLine("Name = {0}", person1.Name);
+                Console.WriteLine("Age = {0}", person1.Age);
+
+            }
+        }
+
+
 
     }
 
