@@ -60,5 +60,8 @@
   <ItemGroup>
     <None Include="StaticMembers.md" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="First Principle or Concept of OOP- Encapsulation.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
