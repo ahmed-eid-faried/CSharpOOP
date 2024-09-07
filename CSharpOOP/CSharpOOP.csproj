@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="First Principle or Concept of OOP- Encapsulation.txt" />
+    <Content Include="Second Principle or Concept of OOP - Abstraction.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
