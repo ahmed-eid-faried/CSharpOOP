@@ -24,8 +24,11 @@ namespace CSharpOOP
             //Constructor.MultipleConstructorsUsingOverloading();
             //Constructor.StaticConstructer();
             //Constructor.FindObject();
-            Inheritance.InheritanceEx();
+            //Inheritance.InheritanceEx();
             //Inheritance.InheritanceConstructorEx();
+            //UpcastingAndDowncasting.UpcastingAndDowncastingEx();
+            clsOverriding.OverridingEx();
+
 
             Console.ReadKey();
 
