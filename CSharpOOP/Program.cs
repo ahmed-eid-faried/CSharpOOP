@@ -25,7 +25,7 @@ namespace CSharpOOP
             //Constructor.StaticConstructer();
             //Constructor.FindObject();
             Inheritance.InheritanceEx();
-            Inheritance.InheritanceConstructorEx();
+            //Inheritance.InheritanceConstructorEx();
 
             Console.ReadKey();
 

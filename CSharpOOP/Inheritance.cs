@@ -23,6 +23,7 @@ namespace CSharpOOP
                 return FirstName + ' ' + LastName;
             }
         }
+        public clsPerson5() { }
         public clsPerson5(int ID, string FirstName, string LastName, string Title)
         {
             this.ID = ID;
@@ -34,9 +35,9 @@ namespace CSharpOOP
 
     public class clsEmployee5 : clsPerson5
     {
-        public clsEmployee5(int ID, string FirstName, string LastName, string Title, string DepartmentName, float Salary) : base(
-              ID, FirstName, LastName, Title
-            )
+        public clsEmployee5() { }
+        public clsEmployee5(int ID, string FirstName, string LastName, string Title, string DepartmentName,
+            float Salary) : base(ID, FirstName, LastName, Title)
         {
             this.Salary = Salary;
             this.DepartmentName = DepartmentName;
@@ -88,18 +89,17 @@ namespace CSharpOOP
 
 
             //Create an object of Empoyee
-            //clsEmployee5 Employee1 = new clsEmployee5();
-            clsEmployee5 Employee1 = new clsEmployee5(10, "Mr.", "Ahmed", "Mady", "IT", 5000);
+            clsEmployee5 Employee1 = new clsEmployee5();
 
             //the following inherited from base class person
-            //Employee1.ID = 10;
-            //Employee1.Title = "Mr.";
-            //Employee1.FirstName = "Ahmed";
-            //Employee1.LastName = "Mady";
+            Employee1.ID = 10;
+            Employee1.Title = "Mr.";
+            Employee1.FirstName = "Ahmed";
+            Employee1.LastName = "Mady";
 
             //the following are from derived class Employee
-            //Employee1.DepartmentName = "IT";
-            //Employee1.Salary = 5000;
+            Employee1.DepartmentName = "IT";
+            Employee1.Salary = 5000;
 
             Console.WriteLine("Accessing Object 1 (Employee1):\n");
             Console.WriteLine("ID := {0}", Employee1.ID);
@@ -112,6 +112,25 @@ namespace CSharpOOP
             Console.WriteLine("Salary after increase := {0}", Employee1.Salary);
             Console.ReadKey();
         }
+
+        public static void InheritanceConstructorEx()
+        {
+            //Create an object of Empoyee
+            clsEmployee5 Employee1 = new clsEmployee5(10, "Mr.", "Ahmed", "Mady", "IT", 5000);
+
+
+            Console.WriteLine("Accessing Object 1 (Employee1):\n");
+            Console.WriteLine("ID := {0}", Employee1.ID);
+            Console.WriteLine("Title := {0}", Employee1.Title);
+            Console.WriteLine("Full Name := {0}", Employee1.FullName);
+            Console.WriteLine("Department Name := {0}", Employee1.DepartmentName);
+            Console.WriteLine("Salary := {0}", Employee1.Salary);
+
+            Employee1.IncreaseSalaryBy(100);
+            Console.WriteLine("Salary after increase := {0}", Employee1.Salary);
+            Console.ReadKey();
+        }
+
 
     }
 }
