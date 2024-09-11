@@ -24,6 +24,16 @@ namespace CSharpOOP
             Console.WriteLine("ClassB");
         }
     }
+
+    class ClassD : ClassA
+    {
+        //Method Shadowing or Method Hidding.
+        public new void Print()
+        {
+            base.Print();
+            Console.WriteLine("ClassB");
+        }
+    }
     internal class clsOverriding
     {
         //If the same method is present in both the base class and the derived class,
@@ -34,20 +44,20 @@ namespace CSharpOOP
         //In that case, we use the base keyword to call the method of the base class from the derived class.
         //base keyword is used to call the Print method in the base class.
 
-
+        //Method Shadowing.
 
         public static void OverridingEx()
         {
-            Console.WriteLine("================================");
+            Console.WriteLine("=================ClassA=================");
             ClassA Aa = new ClassA();
             Aa.Print();
-            Console.WriteLine("================================");
+            Console.WriteLine("=================ClassB=================");
             ClassB B = new ClassB();
             B.Print();
-            Console.WriteLine("================================");
+            Console.WriteLine("=================ClassC=================");
             ClassC C = new ClassC();
             C.Print();
-            Console.WriteLine("================================");
+            Console.WriteLine("========================================");
         }
     }
 }

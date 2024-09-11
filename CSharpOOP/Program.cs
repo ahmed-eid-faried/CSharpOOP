@@ -28,7 +28,7 @@ namespace CSharpOOP
             //Inheritance.InheritanceConstructorEx();
             //UpcastingAndDowncasting.UpcastingAndDowncastingEx();
             clsOverriding.OverridingEx();
-
+            Shadowing
 
             Console.ReadKey();
 
