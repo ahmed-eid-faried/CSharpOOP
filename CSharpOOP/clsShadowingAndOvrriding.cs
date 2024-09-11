@@ -48,6 +48,10 @@ namespace CSharpOOP
             superClass2.Print1();
             superClass2.Print2();
             Console.WriteLine("=========================================================");
+            Console.WriteLine("override       ===>> return old value in super class");
+            Console.WriteLine("Shadowing(new) ===>> stay by same value due to it's copy of super class ");
+
+            Console.WriteLine("=========================================================");
         }
     }
 }
