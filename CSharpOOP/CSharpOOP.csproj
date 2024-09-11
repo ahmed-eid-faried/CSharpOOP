@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessModifiers.cs" />
+    <None Include="Types Of Inheritance.md" />
     <Compile Include="ClassObject.cs" />
     <Compile Include="clsShadowingAndOvrriding.cs" />
     <Compile Include="Constructor.cs" />
