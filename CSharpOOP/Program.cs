@@ -30,7 +30,7 @@ namespace CSharpOOP
             //clsOverriding.OverridingEx();
             //clsShadowingAndOvrriding.ShadowingAndOvrridingEx();
             //clsMultiLevelInheritance.MultiLevelInheritanceEx();
-            clsHierarchalInheritance.HierarchalInheritanceEx();
+            //clsHierarchalInheritance.HierarchalInheritanceEx();
             clsAbstractClass.AbstractClassEx();
             Console.ReadKey();
 

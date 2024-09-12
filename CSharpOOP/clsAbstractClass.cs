@@ -36,9 +36,9 @@ namespace CSharpOOP
             //  Person Person1= new Person();
 
             Employee8 employee = new Employee8();
-            employee.FirstName = "Mohammed";
-            employee.LastName = "Abu-Hadhoud";
-            employee.EmployeeId = 123;
+            employee.FirstName = "Ahmed";
+            employee.LastName = "Mady";
+            employee.EmployeeId = 12345;
             employee.Introduce(); // Output: "Hi, my name is John Doe, and my employee ID is 123."
             employee.SayGoodbye(); // Output: "Goodbye!"
 
