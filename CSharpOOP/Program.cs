@@ -29,8 +29,8 @@ namespace CSharpOOP
             //UpcastingAndDowncasting.UpcastingAndDowncastingEx();
             //clsOverriding.OverridingEx();
             //clsShadowingAndOvrriding.ShadowingAndOvrridingEx();
-            clsMultiLevelInheritance.MultiLevelInheritanceEx();
-
+            //clsMultiLevelInheritance.MultiLevelInheritanceEx();
+            clsHierarchalInheritance.HierarchalInheritanceEx();
             Console.ReadKey();
 
         }
