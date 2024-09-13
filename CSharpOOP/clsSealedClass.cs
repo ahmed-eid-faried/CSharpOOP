@@ -47,6 +47,10 @@ namespace CSharpOOP
         }
         internal static void SealedMethodsEx()
         {
+            //During method overriding, if we don't want an overridden method to be further
+            //overridden by another class, we can declare it as a sealed method.
+
+
             Person person = new Person();
             person.Greet(); // outputs "The person says hello."
 
