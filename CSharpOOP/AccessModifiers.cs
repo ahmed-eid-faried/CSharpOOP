@@ -61,7 +61,19 @@ namespace CSharpOOP
             Console.WriteLine("fun2 = {0} ", ObjB.fun4());
             ////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////////
+            //internal access modifier
+            //When we declare a type or type member as internal, it can be accessed only within
+            //the same assembly(Same DLL).
 
+            //An assembly is a collection of types(classes, interfaces, etc) and resources(data).
+            //They are built to work together and form a logical unit of functionality.
+
+            //That's why when we run an assembly all classes and interfaces inside the assembly
+            //run together.
+
+            //Note: Internal in C# is equivalent to friend in C++.
+            ////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////
 
 
         }

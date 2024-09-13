@@ -13,7 +13,7 @@ namespace CSharpOOP
         static void Main(string[] args)
         {
             //ClassObject.PersonEx();
-            //AccessModifiers.AccessModifiersEx();
+            AccessModifiers.AccessModifiersEx();
             //StaticMembers.StaticMembersEx();
             //GetSetProperty.PropertiesSetAndGet();
             //StaticPropertiesAndStaticClass.StaticPropertiesAndStaticClassEx();
