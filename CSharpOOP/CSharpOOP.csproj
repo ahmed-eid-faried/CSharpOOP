@@ -47,6 +47,7 @@
     <None Include="Types Of Inheritance.md" />
     <Compile Include="ClassObject.cs" />
     <Compile Include="clsAbstractClass.cs" />
+    <Compile Include="clsComposition.cs" />
     <Compile Include="CLSHierarchalInheritance.cs" />
     <Compile Include="clsInterface.cs" />
     <Compile Include="clsMultiLevelInheritance.cs" />

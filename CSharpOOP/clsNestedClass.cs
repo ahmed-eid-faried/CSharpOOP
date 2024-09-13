@@ -1,4 +1,5 @@
 ﻿using System;
+using static CSharpOOP.OuterClass;
 
 namespace CSharpOOP
 {
@@ -42,6 +43,9 @@ namespace CSharpOOP
     {
         internal static void NestedClassEx()
         {
+            //we have created the class InnerClass inside the class OuterClass.
+            //The InnerClass is called the nested class.
+
             // create an instance of OuterClass
             OuterClass outer1 = new OuterClass(42);
 
@@ -52,6 +56,14 @@ namespace CSharpOOP
             outer1.OuterMethod(); // prints "Outer method called."
             inner1.InnerMethod(); // prints "Inner method called with innerVariable = 100"
             inner1.AccessOuterVariable(outer1); // prints "Accessing outerVariable from inner class: 42"
+
+            //In this example, InnerClass is defined inside OuterClass.It has its own
+            //private innerVariable field and a method called InnerMethod that prints
+            //the value of that variable.It also has a method called AccessOuterVariable
+            //that takes an instance of OuterClass as a parameter and prints the value of
+            //the outerVariable field.
+
+
         }
-    }
+}
 }
