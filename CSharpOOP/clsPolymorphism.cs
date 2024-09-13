@@ -39,6 +39,13 @@ namespace CSharpOOP
                 Console.WriteLine("Method: ClsBB");
             }
         }
+        public class ClsCC : ClsAA
+        {
+            public override void Print()
+            {
+                Console.WriteLine("Method: ClsCC");
+            }
+        }
         internal static void CompileTimePolymorphismEx()
         {
             //overloading ====>> >> Compile-Time Polymorphism
@@ -71,6 +78,8 @@ namespace CSharpOOP
             ObjA.Print();
             ClsBB ObjB = new ClsBB();
             ObjB.Print();
+            ClsCC ObjC = new ClsCC();
+            ObjC.Print();
 
 
         }
@@ -81,6 +90,12 @@ namespace CSharpOOP
             //inheritance is also a form of polymorphism known as "subtyping" or "subtype
             //polymorphism".
 
+
+            //overriding
+            ClsAA ObjA = new ClsAA();
+            ObjA.Print();
+            ClsBB ObjB = new ClsBB();
+            ObjB.Print();
 
         }
     }
