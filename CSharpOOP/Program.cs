@@ -31,7 +31,9 @@ namespace CSharpOOP
             //clsShadowingAndOvrriding.ShadowingAndOvrridingEx();
             //clsMultiLevelInheritance.MultiLevelInheritanceEx();
             //clsHierarchalInheritance.HierarchalInheritanceEx();
-            clsAbstractClass.AbstractClassEx();
+            //clsAbstractClass.AbstractClassEx();
+            clsInterface.InterfaceEx();
+            clsInterface.MultipleInterfaceEx();
             Console.ReadKey();
 
         }

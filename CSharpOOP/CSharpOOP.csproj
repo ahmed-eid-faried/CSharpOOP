@@ -48,6 +48,7 @@
     <Compile Include="ClassObject.cs" />
     <Compile Include="clsAbstractClass.cs" />
     <Compile Include="CLSHierarchalInheritance.cs" />
+    <Compile Include="clsInterface.cs" />
     <Compile Include="clsMultiLevelInheritance.cs" />
     <Compile Include="clsShadowingAndOvrriding.cs" />
     <Compile Include="Constructor.cs" />
