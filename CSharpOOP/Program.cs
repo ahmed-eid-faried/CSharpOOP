@@ -48,6 +48,7 @@ namespace CSharpOOP
             //ClassAndStruct.ClassEx();
             //ClassAndStruct.StructEx();
             ClassAndStruct.StructVsClassEx();
+
             Console.ReadKey();
 
         }
