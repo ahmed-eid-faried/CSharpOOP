@@ -50,6 +50,7 @@
     <Compile Include="CLSHierarchalInheritance.cs" />
     <Compile Include="clsInterface.cs" />
     <Compile Include="clsMultiLevelInheritance.cs" />
+    <Compile Include="clsNestedClass.cs" />
     <Compile Include="clsShadowingAndOvrriding.cs" />
     <Compile Include="Constructor.cs" />
     <Compile Include="Employee.cs" />

@@ -33,7 +33,8 @@ namespace CSharpOOP
             //clsHierarchalInheritance.HierarchalInheritanceEx();
             //clsAbstractClass.AbstractClassEx();
             //clsInterface.InterfaceEx();
-            clsInterface.MultipleInterfaceEx();
+            //clsInterface.MultipleInterfaceEx();
+            clsNestedClass.NestedClassEx();
             Console.ReadKey();
 
         }
