@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySecondClassLibrary">
+      <HintPath>..\MySecondClassLibrary\bin\Debug\MySecondClassLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +50,7 @@
     <None Include="Types Of Inheritance.md" />
     <Compile Include="ClassObject.cs" />
     <Compile Include="clsAbstractClass.cs" />
+    <Compile Include="clsClassLibrary.cs" />
     <Compile Include="clsComposition.cs" />
     <Compile Include="CLSHierarchalInheritance.cs" />
     <Compile Include="clsInterface.cs" />
@@ -78,6 +82,12 @@
   <ItemGroup>
     <Content Include="First Principle or Concept of OOP- Encapsulation.txt" />
     <Content Include="Second Principle or Concept of OOP - Abstraction.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyFirstClassLibrary\MyFirstClassLibrary.csproj">
+      <Project>{e8a0fbaa-d0ea-4719-b806-4062d69413fc}</Project>
+      <Name>MyFirstClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

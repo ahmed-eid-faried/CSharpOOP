@@ -41,8 +41,9 @@ namespace CSharpOOP
             //clsPartialClass.PartialClassesEx();
             //clsPartialClass.PartialMethodsEx();
             //clsPolymorphism.CompileTimePolymorphismEx();
-            clsPolymorphism.RunTimePolymorphismEx();
+            //clsPolymorphism.RunTimePolymorphismEx();
             //clsPolymorphism.InheritancePolymorphismEx();
+            clsClassLibrary.clsClassLibraryEx();
             Console.ReadKey();
 
         }
