@@ -13,7 +13,7 @@ namespace CSharpOOP
         static void Main(string[] args)
         {
             //ClassObject.PersonEx();
-            AccessModifiers.AccessModifiersEx();
+            //AccessModifiers.AccessModifiersEx();
             //StaticMembers.StaticMembersEx();
             //GetSetProperty.PropertiesSetAndGet();
             //StaticPropertiesAndStaticClass.StaticPropertiesAndStaticClassEx();
@@ -43,7 +43,8 @@ namespace CSharpOOP
             //clsPolymorphism.CompileTimePolymorphismEx();
             //clsPolymorphism.RunTimePolymorphismEx();
             //clsPolymorphism.InheritancePolymorphismEx();
-            clsClassLibrary.clsClassLibraryEx();
+            //clsClassLibrary.clsClassLibraryEx();
+            clsEnums.EnumsEx();
             Console.ReadKey();
 
         }

@@ -52,6 +52,7 @@
     <Compile Include="clsAbstractClass.cs" />
     <Compile Include="clsClassLibrary.cs" />
     <Compile Include="clsComposition.cs" />
+    <Compile Include="clsEnums.cs" />
     <Compile Include="CLSHierarchalInheritance.cs" />
     <Compile Include="clsInterface.cs" />
     <Compile Include="clsMultiLevelInheritance.cs" />
