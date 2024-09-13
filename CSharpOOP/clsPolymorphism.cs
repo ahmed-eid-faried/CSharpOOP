@@ -24,6 +24,21 @@ namespace CSharpOOP
                 Console.WriteLine(sum);
             }
         }
+
+        public class ClsAA
+        {
+            public virtual void Print()
+            {
+                Console.WriteLine("Method: ClsAA");
+            }
+        }
+        public class ClsBB : ClsAA
+        {
+            public override void Print()
+            {
+                Console.WriteLine("Method: ClsBB");
+            }
+        }
         internal static void CompileTimePolymorphismEx()
         {
             //overloading ====>> >> Compile-Time Polymorphism
@@ -51,6 +66,11 @@ namespace CSharpOOP
             //by its parent class. The method in the subclass must have the same signature
             //(name, return type, and parameters) as the method in the parent class.
 
+            //overriding
+            ClsAA ObjA = new ClsAA();
+            ObjA.Print();
+            ClsBB ObjB = new ClsBB();
+            ObjB.Print();
 
 
         }
