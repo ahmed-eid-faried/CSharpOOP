@@ -46,6 +46,9 @@ namespace CSharpOOP
                 Console.WriteLine("Method: ClsCC");
             }
         }
+
+        //Polymorphism in C# refers to the ability of an object to take on multiple forms, i.e.,
+        //objects of different types can be treated as objects of a common base type.
         internal static void CompileTimePolymorphismEx()
         {
             //overloading ====>> >> Compile-Time Polymorphism
