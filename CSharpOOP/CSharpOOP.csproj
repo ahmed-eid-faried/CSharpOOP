@@ -53,6 +53,7 @@
     <Compile Include="clsMultiLevelInheritance.cs" />
     <Compile Include="clsNestedClass.cs" />
     <Compile Include="clsPartialClass.cs" />
+    <Compile Include="clsPolymorphism.cs" />
     <Compile Include="clsSealedClass.cs" />
     <Compile Include="clsShadowingAndOvrriding.cs" />
     <Compile Include="Constructor.cs" />

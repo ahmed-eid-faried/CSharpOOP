@@ -39,7 +39,10 @@ namespace CSharpOOP
             //clsSealedClass.SealedClassEx();
             //clsSealedClass.SealedMethodsEx();
             //clsPartialClass.PartialClassesEx();
-            clsPartialClass.PartialMethodsEx();
+            //clsPartialClass.PartialMethodsEx();
+            clsPolymorphism.CompileTimePolymorphismEx();
+            //clsPolymorphism.RunTimePolymorphismEx();
+            //clsPolymorphism.InheritancePolymorphismEx();
             Console.ReadKey();
 
         }
