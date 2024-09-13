@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,20 +20,34 @@ namespace CSharpOOP
     }
     internal class ClassAndStruct
     {
-        //إليك جدول يقارن بين الكلاس(Class) والهيكل(Struct) في لغة #C:
-
-        //الخاصية Class(الكلاس)  Struct(الهيكل)
-        //نوع البيانات           نوع مرجعي(Reference Type)          نوع قيمة(Value Type)
-        //التخزين في الذاكرة يُخزن في الذاكرة المؤقتة(Heap) يُخزن في المكدس(Stack)
-        //النسخ عند النسخ، يتم نسخ المرجع فقط(أي التغييرات تؤثر على الكائن الأصلي) عند النسخ، يتم نسخ القيمة بالكامل(لا تؤثر التغييرات على النسخة الأصلية)
-        //الوراثة(Inheritance)   يدعم الوراثة(يمكن للكلاس أن يرث من كلاس آخر)   لا يدعم الوراثة(لا يمكن للهيكل أن يرث من هيكل أو كلاس آخر)
-        //المُنشئ الافتراضي   يحتوي على مُنشئ افتراضي يُضاف تلقائيًا  لا يحتوي على مُنشئ افتراضي، ويجب تعيين جميع الحقول يدويًا
-        //الأداء  أبطأ نسبيًا، خاصة مع الأنواع الصغيرة، نظرًا لتخزينه في الذاكرة المؤقتة أسرع نسبيًا عند التعامل مع الأنواع الصغيرة والبسيطة، نظرًا لتخزينه في المكدس
-        //إدارة الذاكرة   يستهلك مساحة أكبر في الذاكرة المؤقتة، ولكن مع مرونة أكبر    يُستهلك في المكدس، والذي يعد محدود الحجم
-        //قابلية التعديل  يمكن تعديل البيانات عبر المرجع كل عملية نسخ تنتج نسخة مستقلة
-        //الدعم للأساليب والخصائص يمكن أن يحتوي على أساليب، خصائص، أحداث، ووظائف معقدة    يمكن أن يحتوي على أساليب وخصائص ولكنه بسيط نسبيًا
-        //استخدامات   يُستخدم للأشياء الكبيرة والمعقدة التي تحتاج إلى مرجع متكرر يُستخدم للبيانات البسيطة والخفيفة مثل الأنواع العددية
-
+        //In C#, both classes and structures are used to define custom data types that can
+        //contain fields, properties, methods, and events. However, there are some
+        //differences between them. Here are some of the main differences between classes
+        //and structures in C#:
+        //Syntax: Classes are defined using the "class" keyword, followed by the class
+        //name and the class body, which contains the class members. Structures are
+        //defined using the "struct" keyword, followed by the struct name and the struct
+        //body, which also contains the struct members.
+        //Inheritance: Classes can be inherited by other classes to create a hierarchy
+        //of related classes, whereas structures cannot be inherited or derived from other
+        //structures.
+        //Default constructor: Classes have a default constructor that is automatically
+        //provided by the compiler if a constructor is not explicitly defined.Structures,
+        //on the other hand, do not have a default constructor and require all fields to
+        //be initialized explicitly.
+        //Reference type vs Value type: Classes are reference types, which means that when
+        //an instance of a class is created, a reference to that instance is returned.
+        //Structures are value types, which means that when an instance of a structure
+        //is created, the value of the instance is returned.
+        //Performance: Structures are generally faster than classes for small, simple
+        //types, as they are stored on the stack rather than the heap.This means that
+        //accessing and manipulating a structure's fields can be faster than accessing
+        //and manipulating a class's fields.
+        //Memory management: Since structures are value types, they are allocated on
+        //the stack, which is a limited resource, while classes are allocated on the heap,
+        //which is a larger, more flexible memory pool. This means that using too many
+        //structures or large structures can quickly consume the available stack memory,
+        //causing a stack overflow error.
 
         public static void ClassEx()
         {
