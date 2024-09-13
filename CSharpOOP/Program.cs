@@ -36,7 +36,8 @@ namespace CSharpOOP
             //clsInterface.MultipleInterfaceEx();
             //clsNestedClass.NestedClassEx();
             //clsComposition.CompositionEx();
-            clsSealedClass.SealedClassEx();
+            //clsSealedClass.SealedClassEx();
+            clsSealedClass.SealedMethodsEx();
             Console.ReadKey();
 
         }
