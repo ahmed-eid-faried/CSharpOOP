@@ -18,6 +18,24 @@ namespace CSharpOOP
                 Console.WriteLine("Method 2 is called.");
             }
         }
+        public partial class Person12
+        {
+            public int Age { get; set; }
+            partial void PrintAge();
+            public void Birthday()
+            {
+                Age++;
+                PrintAge();
+            }
+        }
+
+        public partial class Person12
+        {
+            partial void PrintAge()
+            {
+                Console.WriteLine("Current age: {0}", Age);
+            }
+        }
         internal static void PartialClassesEx()
         {
             //Places where partial class can be used:
@@ -48,6 +66,14 @@ namespace CSharpOOP
             obj.Method2();
 
 
+        }
+        internal static void PartialMethodsEx()
+        {
+            //the code of Person Class is seperated in 2 files Person1.cs and PersonPrinting.cs
+            Person12 person1 = new Person12();
+            person1.Age = 25;
+            person1.Birthday(); // Output: "Current age: 26"
+            //person1.PrintAge(); // can't access partial methods in c# less than v9
         }
     }
 }

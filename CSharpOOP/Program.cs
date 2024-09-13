@@ -38,7 +38,8 @@ namespace CSharpOOP
             //clsComposition.CompositionEx();
             //clsSealedClass.SealedClassEx();
             //clsSealedClass.SealedMethodsEx();
-            clsPartialClass.PartialClassesEx();
+            //clsPartialClass.PartialClassesEx();
+            clsPartialClass.PartialMethodsEx();
             Console.ReadKey();
 
         }
