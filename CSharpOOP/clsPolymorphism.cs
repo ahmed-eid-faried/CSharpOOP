@@ -4,6 +4,26 @@ namespace CSharpOOP
 {
     internal class clsPolymorphism
     {
+        public class ClsC
+        {
+            public void Sum(int x, int y)
+            {
+                Console.WriteLine(x + y);
+            }
+            public void Sum(int x, int y, int z)
+            {
+                Console.WriteLine(x + y + z);
+            }
+            public void Sum(int[] List)
+            {
+                int sum = 0;
+                foreach (int x in List)
+                {
+                    sum += x;
+                }
+                Console.WriteLine(sum);
+            }
+        }
         internal static void CompileTimePolymorphismEx()
         {
             //overloading ====>> >> Compile-Time Polymorphism
@@ -12,6 +32,14 @@ namespace CSharpOOP
             //allows multiple methods to have the same name, but with different parameters.
             //The compiler selects the appropriate method to call based on the number, types,
             //and order of the parameters.
+
+            //overloading
+            ClsC ObjC = new ClsC();
+            ObjC.Sum(1, 2);
+            ObjC.Sum(1, 2, 3);
+            int[] marks = new int[] { 99, 98, 92, 97, 95 };
+            ObjC.Sum(marks);
+            ObjC.Sum(new int[] { 99, 98, 92, 97, 95 });
 
         }
         internal static void RunTimePolymorphismEx()
