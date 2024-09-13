@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="AccessModifiers.cs" />
     <None Include="Types Of Inheritance.md" />
+    <Compile Include="ClassAndStruct.cs" />
     <Compile Include="ClassObject.cs" />
     <Compile Include="clsAbstractClass.cs" />
     <Compile Include="clsClassLibrary.cs" />
@@ -83,6 +84,7 @@
   <ItemGroup>
     <Content Include="First Principle or Concept of OOP- Encapsulation.txt" />
     <Content Include="Second Principle or Concept of OOP - Abstraction.txt" />
+    <None Include="clsClassAndStruct.md" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyFirstClassLibrary\MyFirstClassLibrary.csproj">

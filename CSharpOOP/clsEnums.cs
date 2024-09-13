@@ -22,7 +22,10 @@ namespace CSharpOOP
         }
         internal static void EnumsEx()
         {
-            throw new NotImplementedException();
+            Level myVar = Level.Medium;
+            Console.WriteLine(myVar);
+            Days myDay = Days.Fri;
+            Console.WriteLine(myDay);
         }
     }
 }

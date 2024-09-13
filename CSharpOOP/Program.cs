@@ -44,7 +44,9 @@ namespace CSharpOOP
             //clsPolymorphism.RunTimePolymorphismEx();
             //clsPolymorphism.InheritancePolymorphismEx();
             //clsClassLibrary.clsClassLibraryEx();
-            clsEnums.EnumsEx();
+            //clsEnums.EnumsEx();
+            ClassAndStruct.ClassEx();
+            ClassAndStruct.StructEx();
             Console.ReadKey();
 
         }
